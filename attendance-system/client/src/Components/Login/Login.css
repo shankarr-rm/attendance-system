@@ -1,0 +1,84 @@
+
+body, html {
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    
+}
+
+.image {
+    width: 95.2rem;
+    margin-bottom: 20px;
+    margin-top: -26.5rem;
+    margin-left: 0px;
+}
+
+.col-1-log {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: -2rem;
+}
+  
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+  
+#form input {
+    padding: 1em;
+    border: 1px solid #3fb62f;
+    border-radius: 4px;
+    font-size: 1em;
+}
+  
+#form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+  
+.btn {
+    padding: 1em;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #2980b9;
+}
+  
+.additional-links {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+  
+.additional-links a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.additional-links a:hover {
+    color: #2980b9;
+}
+    
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.remember-forgot input {
+    margin-right: 0.5em;
+}
+
+  
