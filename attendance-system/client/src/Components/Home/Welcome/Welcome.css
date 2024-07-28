@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  background: url('./welcome-image.jpg') no-repeat center center/cover; /* Set the background image */
+  position: relative;
+}
+
+.welcome-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.welcome-heading {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.welcome-caption {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.welcome-about {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.welcome-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.welcome-button:hover {
+  background-color: #004d40;
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .welcome-heading {
+    font-size: 2rem;
+  }
+
+  .welcome-caption {
+    font-size: 1rem;
+  }
+
+  .welcome-about {
+    font-size: 0.9rem;
+  }
+
+  .welcome-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

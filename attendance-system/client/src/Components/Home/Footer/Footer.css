@@ -1,0 +1,158 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.footer {
+  background: rgba(56, 138, 66, 0.925);
+  background: linear-gradient(90deg, #004d40, #00695c, #00796b, #00897b, #26a69a, #4db6ac, #80cbc4, #00897b, #00695c,#004d40);
+  color: #f8f9fa;
+  padding-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.icon-details{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.footer-section ul li a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff8c00;
+}
+
+.footer-section .contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-section.contact p i {
+  margin-right: 10px;
+}
+
+.footer-section .newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer-section .newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff8c00;
+  color: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-section .newsletter button:hover {
+  background-color: #ffa500;
+}
+
+form input{
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+
+form button{
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(11, 56, 11);
+  color: white;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #f8f9fa;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  color: #ff8c00;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section .newsletter input {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .footer-section .newsletter button {
+    width: 100%;
+  }
+}
