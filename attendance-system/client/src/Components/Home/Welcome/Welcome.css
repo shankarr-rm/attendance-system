@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   height: 85vh;
-  background: url('./welcome-image.jpg') no-repeat center center/cover; /* Set the background image */
+  background: url('./welcome-image.jpg') no-repeat center center/cover; 
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5); 
   padding: 40px;
   border-radius: 15px;
   text-align: center;
@@ -61,8 +61,8 @@
   transform: scale(1.1);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+
+@media (max-width: 800px) {
   .welcome-heading {
     font-size: 2rem;
   }
