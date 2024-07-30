@@ -7,9 +7,16 @@ import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from 'react';
 import { PiHandPeace } from "react-icons/pi";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [ activeNav, setActiveNav] = useState('#')
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/'); 
+  };
+
   return (
     <div className='navbar'>
     <p className="hiall"><div className="xy"><div className="x">Welcome All </div><div className="y"><PiHandPeace /></div></div></p>
@@ -20,8 +27,8 @@ const Navbar = () => {
       <a href="#services" onClick={()=>setActiveNav('#services')} className={activeNav==='#services'?'active':''}> <div className="ab"><div className="a">Services </div><div className="b"><RiServiceLine /></div></div></a>
       <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav==='#contact'?'active':''}> <div className="ab"><div className="a">Contact  </div><div className="b"><BiMessageSquareDetail /></div></div></a>
     </div>
-    <form action="" className="logout">
-        <input type="submit" value="Log out" />
+ <form onSubmit={(e) => { e.preventDefault(); handleLogout(); }} className="logout">        
+  <input type="submit" value="Log out" />
     </form>
     </div>
   )
