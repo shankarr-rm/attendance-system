@@ -34,7 +34,7 @@ export default function Login() {
     if (!validate()) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('http://localhost:7000/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,6 +46,7 @@ export default function Login() {
 
       if (response.ok) {
         alert('Login successful!');
+        localStorage.setItem('token', data.token);  // storing jwt token
         navigate('/homepage');
       } else {
         if (response.status === 401) {
