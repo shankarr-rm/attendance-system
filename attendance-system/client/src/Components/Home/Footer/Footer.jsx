@@ -25,7 +25,7 @@ const Footer = () => {
           <h2>Contact Us</h2>
         <div className="icon-details"><div className="icon"><SiGooglemaps/></div><div className="detail">29/8 Kandy Road Jaffna</div></div>
         <div className="icon-details"><div className="icon"><FaPhoneAlt/></div><div className="detail">+94 77 490 5464</div></div>
-        <div className="icon-details"><div className="icon"><SiGmail/></div><div className="detail"><a href="mailto:info@abcd.com">info@hmk.com</a></div></div>
+        <div className="icon-details"><div className="icon"><SiGmail/></div><div className="detail"><a href="mailto:info@abcd.com">info@jho.com</a></div></div>
 
         </div>
         <div className="footer-section newsletter">
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 School App. All rights reserved.</p>
+        <p>&copy; 2024 Jaffna Hindu Org. All rights reserved.</p>
         <div className="social-media">
       
           <a href="#" className="social-link"><i className="fab fa-facebook-f"></i></a>
